@@ -1,0 +1,44 @@
+.f-section {
+  padding-top: 94px;
+}
+.features-list {
+  display: flex;
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .title {
+    margin-bottom: 10px;
+    margin-top: 0px;
+    color: $primary-text-color;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  .text {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $secondary-text-color;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+    letter-spacing: 0.03em;
+  }
+}
+.icon-features {
+  padding: 0;
+  margin-bottom: 30px;
+  border: 0;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  .button-icon {
+    width: 70px;
+    height: 70px;
+    margin: 25px 100px;
+    border-radius: 4px;
+  }
+}

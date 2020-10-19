@@ -9,6 +9,9 @@ body {
   background-color: #fff;
   color: var(--primary-text-color);
 }
+a {
+  text-decoration: none;
+}
 /* Утилиты */
 .list {
   list-style: none;

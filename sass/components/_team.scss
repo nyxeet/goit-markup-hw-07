@@ -23,15 +23,15 @@
     margin-right: 30px;
   }
 }
-.team-item li:not(:last-child) {
-  margin-right: 10px;
-}
 .actions {
   display: flex;
   justify-content: center;
   padding: 0;
   margin: 16px 32px 30px 32px;
   list-style: none;
+  li:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .actions .button {
   display: flex;

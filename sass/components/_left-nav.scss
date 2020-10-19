@@ -5,15 +5,12 @@
     margin-right: 50px;
   }
 }
-.left-item:not(:last-child) {
-  margin-right: 50px;
-}
 .left-link {
   position: relative;
   display: flex;
   align-items: center;
   height: 80px;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -38,7 +35,7 @@
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     display: inline-block;
     width: 100%;

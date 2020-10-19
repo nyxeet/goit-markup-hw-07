@@ -34,9 +34,6 @@
     letter-spacing: 0.01em;
     color: $secondary-text-color;
   }
-  &.textarea {
-    margin-bottom: 20px;
-  }
 }
 .form-icon {
   position: absolute;
@@ -67,6 +64,7 @@
 .form-textarea {
   height: 120px;
   margin: 0;
+  margin-bottom: 20px;
   padding: 12px 16px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -86,22 +84,23 @@
     color: rgba(117, 117, 117, 0.5);
   }
 }
-.checkbox-field {
+.checkbox {
   height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   margin-bottom: 0;
+  .checkbox-form {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+  }
 }
-.form-checkbox {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-}
+
 .checkbox-icon {
   margin-right: 7px;
   left: 0;
@@ -109,7 +108,7 @@
   height: 15px;
   background-image: url('../img/checkbox-off.svg');
   border-radius: 2px;
-  .form-checkbox:checked ~ & {
+  .checkbox-form:checked ~ & {
     background-image: url('../img/check-on.svg');
     border-color: #2196f3;
     background-size: contain;
@@ -123,11 +122,12 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $secondary-text-color;
+  .policy-k {
+    text-decoration: underline;
+    color: $accent-color;
+  }
 }
-.policy-k {
-  text-decoration: underline;
-  color: $accent-color;
-}
+
 .close-button {
   display: inline-block;
   padding: 10px 55px 10px 56px;
